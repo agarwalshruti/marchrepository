@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.zohocrm.TestScripts.CampaignTest">
+        <methods>
+          <include name="createCampaignTest"/>
+          <include name="configAfterSuite"/>
+          <include name="configAfterClass"/>
+          <include name="configBeforeClass"/>
+          <include name="configBeforeSuite"/>
+          <include name="configAfterMethod"/>
+          <include name="configBeforeMethod"/>
+        </methods>
+      </class> <!-- com.zohocrm.TestScripts.CampaignTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

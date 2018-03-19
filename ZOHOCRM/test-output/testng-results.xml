@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="459282" started-at="2018-03-19T06:56:03Z" finished-at="2018-03-19T07:03:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="459282" started-at="2018-03-19T06:56:03Z" finished-at="2018-03-19T07:03:43Z">
+      <class name="com.zohocrm.TestScripts.CampaignTest">
+        <test-method status="PASS" signature="configBeforeSuite()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configBeforeSuite" is-config="true" duration-ms="1971" started-at="2018-03-19T12:26:01Z" finished-at="2018-03-19T12:26:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeSuite -->
+        <test-method status="PASS" signature="configBeforeClass()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configBeforeClass" is-config="true" duration-ms="30121" started-at="2018-03-19T12:26:03Z" finished-at="2018-03-19T12:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method status="PASS" signature="configBeforeMethod()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configBeforeMethod" is-config="true" duration-ms="197994" started-at="2018-03-19T12:26:33Z" finished-at="2018-03-19T12:29:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method status="FAIL" signature="createCampaignTest()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="createCampaignTest" duration-ms="99667" started-at="2018-03-19T12:29:51Z" finished-at="2018-03-19T12:31:31Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 30 seconds waiting for title to be "Upcoming Webinar: Zoho CRM overview.". Current title: "Zoho CRM - Campaign Details"
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Dream', ip: '192.168.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e21593fe-e061-4d87-97de-67fcb127cace]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for title to be "Upcoming Webinar: Zoho CRM overview.". Current title: "Zoho CRM - Campaign Details"
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Dream', ip: '192.168.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e21593fe-e061-4d87-97de-67fcb127cace
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.zohocrm.GenericLib.WebDriverCommonLibrary.waitForElementToLoadForTitleIsPresent(WebDriverCommonLibrary.java:57)
+	at com.zohocrm.TestScripts.CampaignTest.createCampaignTest(CampaignTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaignTest -->
+        <test-method status="PASS" signature="configAfterMethod(org.testng.ITestResult)[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configAfterMethod" is-config="true" duration-ms="63127" started-at="2018-03-19T12:31:32Z" finished-at="2018-03-19T12:32:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createCampaignTest status=FAILURE method=CampaignTest.createCampaignTest()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method status="PASS" signature="configBeforeMethod()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configBeforeMethod" is-config="true" duration-ms="18240" started-at="2018-03-19T12:32:35Z" finished-at="2018-03-19T12:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method status="PASS" signature="createAndDeleteCampaignTest()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="createAndDeleteCampaignTest" duration-ms="25227" started-at="2018-03-19T12:32:53Z" finished-at="2018-03-19T12:33:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteCampaignTest -->
+        <test-method status="PASS" signature="configAfterMethod(org.testng.ITestResult)[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configAfterMethod" is-config="true" duration-ms="19435" started-at="2018-03-19T12:33:19Z" finished-at="2018-03-19T12:33:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAndDeleteCampaignTest status=SUCCESS method=CampaignTest.createAndDeleteCampaignTest()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method status="PASS" signature="configAfterClass()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configAfterClass" is-config="true" duration-ms="4403" started-at="2018-03-19T12:33:38Z" finished-at="2018-03-19T12:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+        <test-method status="PASS" signature="configAfterSuite()[pri:0, instance:com.zohocrm.TestScripts.CampaignTest@464bee09]" name="configAfterSuite" is-config="true" duration-ms="757" started-at="2018-03-19T12:33:43Z" finished-at="2018-03-19T12:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterSuite -->
+      </class> <!-- com.zohocrm.TestScripts.CampaignTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
